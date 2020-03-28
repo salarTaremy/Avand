@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gold_background"
+    tools:context=".activities.ProductDetailActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Black_Transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/customer1" />
+
+        <TextView
+            android:id="@+id/tv_Header"
+            style="@style/TextViewProductDetailHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/visitor_info"
+            android:textSize="@dimen/H3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/White_Transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".9" />
+
+        <TextView
+            android:id="@+id/tv_Name26"
+            style="@style/TextViewProductDetailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="------------------"
+            android:textSize="@dimen/H0"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Name25" />
+
+        <TextView
+            android:id="@+id/tv_consumerPrice_visitor"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="____"
+            android:textSize="@dimen/H0"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name26"
+            app:layout_constraintEnd_toStartOf="@+id/tv_consumerPrice2"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name26" />
+
+        <TextView
+            android:id="@+id/tv_consumerPrice2"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DoubleDot"
+            android:visibility="invisible"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name26"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Name26"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name26"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_price_visitor"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="____"
+            android:visibility="invisible"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name25"
+            app:layout_constraintEnd_toStartOf="@+id/tv_price2"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name25"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_price2"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DoubleDot"
+            android:visibility="invisible"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name25"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Name25"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name25"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_Name25"
+            style="@style/TextViewProductDetailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="----------------"
+            android:textSize="@dimen/H0"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Name23" />
+
+        <TextView
+            android:id="@+id/tv_detail_visitor"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="____"
+            android:visibility="invisible"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name23"
+            app:layout_constraintEnd_toStartOf="@+id/tv_detail2"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name23" />
+
+        <TextView
+            android:id="@+id/tv_detail2"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DoubleDot"
+            android:visibility="invisible"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name23"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Name23"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name23"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_Name23"
+            style="@style/TextViewProductDetailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="-------------------------"
+            android:visibility="invisible"
+            android:textSize="@dimen/H0"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Name19" />
+
+        <TextView
+            android:id="@+id/tv_id_visitor"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="____"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name21"
+            app:layout_constraintEnd_toStartOf="@+id/tv_id2"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name21" />
+
+        <TextView
+            android:id="@+id/tv_id2"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DoubleDot"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name21"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Name21"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name21"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_Name21"
+            style="@style/TextViewProductDetailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/Visitor_ID"
+            android:textSize="@dimen/H0"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_duration_visitor"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="____"
+            android:visibility="invisible"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name19"
+            app:layout_constraintEnd_toStartOf="@+id/tv_duration2"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name19" />
+
+        <TextView
+            android:id="@+id/tv_duration2"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DoubleDot"
+            android:visibility="invisible"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name19"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Name19"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name19"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_Name19"
+            style="@style/TextViewProductDetailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="----------------"
+            android:textSize="@dimen/H0"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Name17" />
+
+        <TextView
+            android:id="@+id/tv_weight_visitor"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="____"
+            android:visibility="invisible"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name17"
+            app:layout_constraintEnd_toStartOf="@+id/tv_weight2"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name17" />
+
+        <TextView
+            android:id="@+id/tv_weight2"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DoubleDot"
+            android:visibility="invisible"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name17"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Name17"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name17"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_Name17"
+            style="@style/TextViewProductDetailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="---------------"
+            android:textSize="@dimen/H0"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Name15" />
+
+        <TextView
+            android:id="@+id/tv_countInBox_visitor"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="____"
+            android:textSize="@dimen/H0"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name15"
+            app:layout_constraintEnd_toStartOf="@+id/tv_countInBox2"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name15"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_countInBox2"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DoubleDot"
+            android:textSize="@dimen/H0"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name15"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Name15"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name15"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_Name15"
+            style="@style/TextViewProductDetailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="-------"
+            android:visibility="invisible"
+            android:textSize="@dimen/H0"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Name13" />
+
+        <TextView
+            android:id="@+id/tv_more_info_visitor"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="____"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name13"
+            app:layout_constraintEnd_toStartOf="@+id/tv_count2"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name13" />
+
+        <TextView
+            android:id="@+id/tv_count2"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DoubleDot"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name13"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Name13"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name13"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_Name13"
+            style="@style/TextViewProductDetailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/visitor_Discription"
+            android:textSize="@dimen/H0"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Name2" />
+
+        <TextView
+            android:id="@+id/tv_Name_visitor"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="____"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name11"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Name28"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name11" />
+
+        <TextView
+            android:id="@+id/tv_Name28"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DoubleDot"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name11"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Name11"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name11"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_Name11"
+            style="@style/TextViewProductDetailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/H0"
+            android:text="@string/visitor_Name"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Name7" />
+
+        <TextView
+            android:id="@+id/tv_ssn_visitor"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="____"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name9"
+            app:layout_constraintEnd_toStartOf="@+id/tv_brand2"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name9" />
+
+        <TextView
+            android:id="@+id/tv_brand2"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DoubleDot"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name9"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Name9"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name9"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_Name9"
+            style="@style/TextViewProductDetailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/visitor_Ssn"
+            android:textSize="@dimen/H0"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Name11" />
+
+        <TextView
+            android:id="@+id/tv_code_visitor"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="____"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name7"
+            app:layout_constraintEnd_toStartOf="@+id/tv_code2"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name7" />
+
+        <TextView
+            android:id="@+id/tv_code2"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DoubleDot"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name7"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Name7"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name7"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_Name7"
+            style="@style/TextViewProductDetailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/visitor_Code"
+            android:textSize="@dimen/H0"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Name21" />
+
+        <TextView
+            android:id="@+id/tv_Credit_visitor"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="____"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name2"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Group2"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name2" />
+
+        <TextView
+            android:id="@+id/tv_Group2"
+            style="@style/TextViewProductDetailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DoubleDot"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Name2"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Name2"
+            app:layout_constraintTop_toTopOf="@+id/tv_Name2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_Name2"
+            style="@style/TextViewProductDetailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/visitor_Credit"
+            android:textSize="@dimen/H0"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Name9" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_Visitor_Refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@mipmap/ic_sync"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/Amber50" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

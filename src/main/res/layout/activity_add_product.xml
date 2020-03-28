@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Cl_Main_adproduct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gold_background"
+    android:layoutDirection="ltr">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Cl_Header_addProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/layout_border_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Tv_AddProduct_NameKala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:shadowColor="@color/green"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/H3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="نام کالا" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/layout_border_round"
+        android:id="@+id/cl_body_addproduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cl_Header_addProduct">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_border_addproduct_addproduct"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".70" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <pl.polak.clicknumberpicker.ClickNumberPickerView
+                    android:id="@+id/NumPickerQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginEnd="49dp"
+                    android:layout_marginRight="49dp"
+                    app:decimal_number="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:max_value="9999"
+                    app:picker_corner_radius="10"
+                    app:pickers_background_color="@color/colorPrimary"
+                    app:swipe_enabled="false"
+                    app:value_background_color="@color/colorAccent"
+                    app:value_text_color="@android:color/white" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                <pl.polak.clicknumberpicker.ClickNumberPickerView
+                    android:id="@+id/NumPickerQtyK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginEnd="49dp"
+                    android:layout_marginRight="49dp"
+                    app:decimal_number="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:max_value="9999"
+                    app:picker_corner_radius="10"
+                    app:pickers_background_color="@color/colorPrimary"
+                    app:swipe_enabled="false"
+                    app:value_background_color="@color/colorAccent"
+                    app:value_text_color="@android:color/white" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout8">
+
+                <pl.polak.clicknumberpicker.ClickNumberPickerView
+                    android:id="@+id/NumPickerOffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginEnd="49dp"
+                    android:layout_marginRight="49dp"
+                    app:decimal_number="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:max_value="9999"
+                    app:picker_corner_radius="10"
+                    app:pickers_background_color="@color/colorPrimary"
+                    app:swipe_enabled="false"
+                    app:value_background_color="@color/colorAccent"
+                    app:value_text_color="@android:color/white" />
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="left|center"
+                android:text="کارتن:"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H2"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout8"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout8" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="left|center"
+                android:text="عدد :"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H2"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout4"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout4" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="left|center"
+                android:text="جایزه :"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/H2"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout7"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout7" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_product_price_Inf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cl_border_addproduct_addproduct"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/Tv_AddKala_tdk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="تعداد در کارتن:"
+                android:gravity="center|right"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline11"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Tv_AddKala_tdks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center|right"
+                android:text="تعداد کل:"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline11"
+                app:layout_constraintTop_toBottomOf="@+id/Tv_AddKala_tdk" />
+
+            <TextView
+                android:id="@+id/Tv_AddKala_Fee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="قیمت واحد:"
+                android:gravity="center|right"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline11"
+                app:layout_constraintTop_toBottomOf="@+id/Tv_AddKala_tdks" />
+
+            <TextView
+                android:id="@+id/Tv_AddKala_Fee_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="0"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H2"
+                app:layout_constraintBottom_toBottomOf="@+id/Tv_AddKala_Fee"
+                app:layout_constraintEnd_toStartOf="@+id/guideline11"
+                app:layout_constraintTop_toTopOf="@+id/Tv_AddKala_Fee" />
+
+            <TextView
+                android:id="@+id/Tv_AddKala_Arz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="ارزش افزوده:"
+                android:gravity="center|right"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline11"
+                app:layout_constraintTop_toBottomOf="@+id/Tv_AddKala_Fee" />
+
+            <TextView
+                android:id="@+id/Tv_AddKala_Arz_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="0"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H2"
+                app:layout_constraintBottom_toBottomOf="@+id/Tv_AddKala_Arz"
+                app:layout_constraintEnd_toStartOf="@+id/guideline11"
+                app:layout_constraintTop_toTopOf="@+id/Tv_AddKala_Arz" />
+
+            <TextView
+                android:id="@+id/Tv_AddKala_Discount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="تخفیف ویژه:"
+                android:gravity="center|right"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline11"
+                app:layout_constraintTop_toBottomOf="@+id/Tv_AddKala_Arz" />
+
+            <TextView
+                android:id="@+id/Tv_AddKala_Discount_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="0"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H2"
+                app:layout_constraintBottom_toBottomOf="@+id/Tv_AddKala_Discount"
+                app:layout_constraintEnd_toStartOf="@+id/guideline11"
+                app:layout_constraintTop_toTopOf="@+id/Tv_AddKala_Discount" />
+
+            <TextView
+                android:id="@+id/Tv_AddKala_TotalRls"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="مبلغ نهایی:"
+                android:gravity="center|right"
+                android:textColor="@color/green"
+                android:textSize="@dimen/H1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline11"
+                app:layout_constraintTop_toBottomOf="@+id/Tv_AddKala_Discount" />
+
+            <TextView
+                android:id="@+id/Tv_AddKala_TotalRls_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="0"
+                android:textColor="@color/green"
+                android:textSize="@dimen/H2"
+                app:layout_constraintBottom_toBottomOf="@+id/Tv_AddKala_TotalRls"
+                app:layout_constraintEnd_toStartOf="@+id/guideline11"
+                app:layout_constraintTop_toTopOf="@+id/Tv_AddKala_TotalRls" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".4" />
+
+            <TextView
+                android:id="@+id/Tv_AddKala_tdks_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="0"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H2"
+                app:layout_constraintBottom_toBottomOf="@+id/Tv_AddKala_tdks"
+                app:layout_constraintEnd_toStartOf="@+id/guideline11"
+                app:layout_constraintTop_toTopOf="@+id/Tv_AddKala_tdks" />
+
+            <TextView
+                android:id="@+id/Tv_AddKala_tdk_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="0"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H2"
+                app:layout_constraintBottom_toBottomOf="@+id/Tv_AddKala_tdk"
+                app:layout_constraintEnd_toStartOf="@+id/guideline11"
+                app:layout_constraintTop_toTopOf="@+id/Tv_AddKala_tdk" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/layout_border_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_body_addproduct">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="مدت وصول:"
+            android:textSize="@dimen/H1"
+            android:textColor="@color/White"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView26"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="قیمت مصرف کننده:"
+            android:textSize="@dimen/H1"
+            android:textColor="@color/White"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".5" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="موجودی:"
+            android:textSize="@dimen/H1"
+            android:textColor="@color/White"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="سقف سفارش:"
+            android:textSize="@dimen/H1"
+            android:textColor="@color/White"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/Tv_AddKala_CustomerRls_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textSize="@dimen/H2"
+            android:textColor="@color/White"
+            app:layout_constraintBottom_toBottomOf="@+id/textView26"
+            app:layout_constraintEnd_toStartOf="@+id/textView26"
+            app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/Tv_AddKala_Mv_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textSize="@dimen/H2"
+            android:textColor="@color/White"
+            app:layout_constraintBottom_toBottomOf="@+id/textView27"
+            app:layout_constraintEnd_toStartOf="@+id/textView27"
+            app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+        <TextView
+            android:id="@+id/Tv_AddKala_Count_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textSize="@dimen/H2"
+            android:textColor="@color/White"
+            app:layout_constraintBottom_toBottomOf="@+id/textView28"
+            app:layout_constraintEnd_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/Tv_AddKala_CreditCount_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="@dimen/H2"
+            android:textColor="@color/White"
+            android:text="999,999,999,999"
+            app:layout_constraintBottom_toBottomOf="@+id/textView29"
+            app:layout_constraintEnd_toStartOf="@+id/textView29"
+            app:layout_constraintTop_toTopOf="@+id/textView29" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/layout_border_round_w"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/layout_border_round_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30">
+
+            <TextView
+                android:id="@+id/Tv_AddKala_Detail_val"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="هیچ موردی وجود ندارد"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/H0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="لیست جوایز و تخفیفات:"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/H1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".5" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout
+        android:id="@+id/fab_Menu_Product"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        app:containerId="@+id/fab_container_Product"
+        app:fabId="@+id/fab_Product"
+        app:fabToolbarId="@+id/fab_toolbar_Product"
+        app:fadeInFraction="0.2"
+        app:hideDuration="200"
+        app:horizontalMargin="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:showDuration="600"
+        app:verticalMargin="30dp">
+
+
+        <RelativeLayout
+            android:id="@+id/fab_container_Product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_Product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_menu"
+                app:fabSize="normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fab_toolbar_Product"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ImgBtnRefresh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="ImgBtn2_Click"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_sync" />
+            <ImageView
+                android:id="@+id/ImgBtnDelete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="ImgBtn1_Click"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_delete_3" />
+            <ImageView
+                android:id="@+id/ImgBtnConfirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="ImgBtn2_Click"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_check" />
+        </LinearLayout>
+
+    </com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout>
+
+
+</android.support.constraint.ConstraintLayout>

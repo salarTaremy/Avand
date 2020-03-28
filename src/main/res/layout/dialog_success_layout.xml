@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg_transparent"
+    android:layoutDirection="ltr">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/dialog_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Tv_Msg_Succ_Message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|center_vertical"
+            android:text="عملیات با موفقیت انجام شد"
+            android:textAlignment="gravity"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/H1"
+            app:layout_constraintEnd_toEndOf="@+id/Tv_Msg_Succ_Title"
+            app:layout_constraintStart_toStartOf="@+id/Tv_Msg_Succ_Title"
+            app:layout_constraintTop_toBottomOf="@+id/Tv_Msg_Succ_Title" />
+
+        <TextView
+            android:id="@+id/Tv_Msg_Succ_Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="اطلاعات"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/H5"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".75" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".25" />
+
+        <life.sabujak.roundedbutton.RoundedButton
+            android:id="@+id/BtnConfirmSucc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:padding="@dimen/H2"
+            android:text="تایید"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H5"
+            android:textStyle="bold"
+            app:buttonCornerRadius="10dp"
+            app:buttonGradientEndColor="@color/green"
+            app:buttonGradientStartColor="@color/greenDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintTop_toBottomOf="@+id/Tv_Msg_Succ_Message" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/Img_Msg_Succ"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/success" />
+
+</android.support.constraint.ConstraintLayout>

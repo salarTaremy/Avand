@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg_transparent"
+    android:layoutDirection="ltr">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/dialog_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Tv_Msg_Qestion_Message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|center_vertical"
+            android:text="آیا  مطمئن هستید ؟"
+            android:textAlignment="gravity"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/H1"
+            app:layout_constraintEnd_toEndOf="@+id/Tv_Msg_Qestion_Title"
+            app:layout_constraintStart_toStartOf="@+id/Tv_Msg_Qestion_Title"
+            app:layout_constraintTop_toBottomOf="@+id/Tv_Msg_Qestion_Title" />
+
+        <TextView
+            android:id="@+id/Tv_Msg_Qestion_Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="سوال"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/H5"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".25" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".75" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".5" />
+
+        <life.sabujak.roundedbutton.RoundedButton
+            android:id="@+id/BtnCancellQestion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:padding="@dimen/H2"
+            android:text="خیر"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H5"
+            android:textStyle="bold"
+            app:buttonCornerRadius="10dp"
+            app:buttonGradientEndColor="@color/colorAccent"
+            app:buttonGradientStartColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline21"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Tv_Msg_Qestion_Message" />
+
+        <life.sabujak.roundedbutton.RoundedButton
+            android:id="@+id/BtnConfirmQestion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:padding="@dimen/H2"
+            android:text="بلی"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H5"
+            android:textStyle="bold"
+            app:buttonCornerRadius="10dp"
+            app:buttonGradientEndColor="@color/colorAccent"
+            app:buttonGradientStartColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline21"
+            app:layout_constraintTop_toBottomOf="@+id/Tv_Msg_Qestion_Message" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/Img_Msg_Qestion"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/qst2" />
+
+</android.support.constraint.ConstraintLayout>

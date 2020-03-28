@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="TextViewMain">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="TextViewProductDetailField">
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextViewProductDetailValue">
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="TextViewProductDetailHeader">
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextViewCustomerDetailKey">
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextViewCustomerDetailValue">
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--══════════════════════════════════════════════════════════════-->
+    <style name="TextWhiteBoild_3">
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextWhiteBoild_5">
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="TextWhiteBoild_6">
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+
+</resources>

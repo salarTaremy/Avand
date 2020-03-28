@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.bowyer.app:fabtransitionlayout:0.4.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/615fb25958b5bb30b778498d2392761b/fabtransitionlayout-0.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/615fb25958b5bb30b778498d2392761b/fabtransitionlayout-0.4.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bowyer.app/fabtransitionlayout/0.4.0/6284823ccdea55b0c98731c3d3b7e5a0b6b120ac/fabtransitionlayout-0.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bowyer.app/fabtransitionlayout/0.4.0/26fb6e512eda671080fce632d5326d6510f9b4eb/fabtransitionlayout-0.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

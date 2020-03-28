@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="H0">15sp</dimen>
+    <dimen name="H1">16sp</dimen>
+    <dimen name="H2">17sp</dimen>
+    <dimen name="H3">18sp</dimen>
+    <dimen name="H4">19sp</dimen>
+    <dimen name="H5">20sp</dimen>
+    <dimen name="H6">21sp</dimen>
+    <dimen name="H7">22sp</dimen>
+    <dimen name="H8">23sp</dimen>
+    <dimen name="H9">24sp</dimen>
+    <dimen name="H10">25sp</dimen>
+    <dimen name="H11">26sp</dimen>
+    <dimen name="H12">27sp</dimen>
+</resources>

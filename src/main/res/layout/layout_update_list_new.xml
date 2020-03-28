@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/layout_border_round"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/list_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/PrcUpdateNew"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="113dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:indeterminate="false"
+            android:minWidth="200dp"
+            android:minHeight="50dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/custom_progressbar"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_update_ID_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="ID"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H1"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_update_Detail_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:gravity="right"
+            android:text="Detail"
+            android:textColor="@color/Gray"
+            android:textSize="@dimen/H0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_update_header_new"
+            app:layout_constraintTop_toBottomOf="@+id/tv_update_header_new" />
+
+        <TextView
+            android:id="@+id/tv_update_header_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="8dp"
+            android:text="Hrader"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ImgUpdateOk"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/success2" />
+
+        <ImageView
+            android:id="@+id/ImgUpdateErr"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/error2" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

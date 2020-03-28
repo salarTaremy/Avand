@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="RedLight">#FF5722</color>
+    <color name="Red">#FF0000</color>
+    <color name="RedDark">#960000</color>
+    <color name="greenLight">#96FF96</color>
+    <color name="green">#00FF00</color>
+    <color name="greenDark">#009600</color>
+    <color name="BlueLight">#2196FF</color>
+    <color name="Blue">#0000FF</color>
+    <color name="BlueDark">#000096</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="yellowDark">#969600</color>
+    <color name="Pink">#E91E63</color>
+    <color name="Gray">#ACACAC</color>
+    <color name="White_Transparent">#6EFFFFFF</color>
+    <color name="Black_Transparent">#6E000000</color>
+    <color name="Transparent">#00000000</color>
+
+
+
+    <!--<color name="colorPrimary">@color/A400</color>-->
+    <!--<color name="colorPrimaryDark">@color/Amber900</color>-->
+    <!--<color name="colorPrimaryLight">@color/Amber200</color>-->
+    <!--<color name="colorAccent">@color/A700</color>-->
+    <!--<color name="colorBorder">@color/A200</color>-->
+
+
+    <color name="colorPrimary">#a2703d</color>
+    <color name="colorPrimaryDark">#4f351c</color>
+    <color name="colorAccent">@color/Amber800</color>
+
+    <color name="Amber50">#FFF8E1</color>
+    <color name="Amber800">#FF8F00</color>
+
+
+    <!--<color name="colorPrimary">@color/P400</color>-->
+    <!--<color name="colorPrimaryDark">@color/Pink900</color>-->
+    <!--<color name="colorPrimaryLight">@color/Pink200</color>-->
+    <!--<color name="colorAccent">@color/P700</color>-->
+    <!--<color name="colorBorder">@color/P200</color>-->
+
+    <!--<color name="Pink">#FCE4EC</color>-->
+    <!--<color name="Pink100">#F8BBD0</color>-->
+    <!--<color name="Pink200">#F48FB1</color>-->
+    <!--<color name="Pink300">#F06292</color>-->
+    <!--<color name="Pink400">#EC407A</color>-->
+    <!--<color name="Pink500">#E91E63</color>-->
+    <!--<color name="Pink600">#D81B60</color>-->
+    <!--<color name="Pink700">#C2185B</color>-->
+    <!--<color name="Pink800">#AD1457</color>-->
+    <!--<color name="Pink900">#880E4F</color>-->
+    <!--<color name="P100">#FF80AB</color>-->
+    <!--<color name="P700">#C51162</color>-->
+    <!--<color name="P200">#FF4081</color>-->
+    <!--<color name="P400">#F50057</color>-->
+
+
+</resources>

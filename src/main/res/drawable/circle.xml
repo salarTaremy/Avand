@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/Black_Transparent"/>
+    <stroke android:width="0dp" android:color="@color/colorPrimary"  />
+    <corners android:radius="800dp"/>
+    <padding android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="0dp" />
+    <margin android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="0dp" />
+</shape>
+
+
+
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:innerRadius="0dp"-->
+<!--android:shape="ring"-->
+<!--android:thicknessRatio="1.9"-->
+<!--android:useLevel="false" >-->
+<!--<solid android:color="@android:color/transparent" />-->
+
+<!--<stroke-->
+    <!--android:width="10dp"-->
+    <!--android:color="@android:color/white" />-->
+<!--</shape>-->

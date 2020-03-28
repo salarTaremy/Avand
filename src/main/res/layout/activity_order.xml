@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gold_background"
+    android:layoutDirection="ltr"
+    tools:context="com.smartVisitor.avand.activities.OrderActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Cl_Header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/layout_border_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_Order_Name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="توضیحات:"
+            android:textColor="@color/Gray"
+            android:textSize="@dimen/H3"
+            app:layout_constraintEnd_toEndOf="@+id/Tv_Order_Name"
+            app:layout_constraintTop_toBottomOf="@+id/Tv_Order_Name" />
+
+        <TextView
+            android:id="@+id/Tv_Order_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Name Customer"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H3"
+            app:layout_constraintEnd_toEndOf="@+id/Tv_Order_Date"
+            app:layout_constraintTop_toBottomOf="@+id/Tv_Order_Date" />
+
+        <TextView
+            android:id="@+id/Tv_Order_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="تاریخ:"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/Tv_Order_Date_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="00/00/00"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/H3"
+            app:layout_constraintBottom_toBottomOf="@+id/Tv_Order_Date"
+            app:layout_constraintEnd_toStartOf="@+id/Tv_Order_Date"
+            app:layout_constraintTop_toTopOf="@+id/Tv_Order_Date" />
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/RadioBtnGroup_Order"
+            android:layout_width="212dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            segmentedgroup:layout_constraintStart_toStartOf="parent"
+
+            segmentedgroup:layout_constraintTop_toTopOf="parent"
+            segmentedgroup:sc_border_width="2dp"
+            segmentedgroup:sc_corner_radius="10dp"
+            segmentedgroup:sc_tint_color="@color/colorAccent">
+
+            <RadioButton
+                android:id="@+id/Rad_Order_1"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="نقد"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H2" >
+                <requestFocus />
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/Rad_Order_2"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="چک"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H2" />
+
+            <RadioButton
+                android:id="@+id/Rad_Order_3"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="سایر"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H2" />
+
+
+        </info.hoang8f.android.segmented.SegmentedGroup>
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/RadioBtnGroup_OrderType"
+            android:layout_width="212dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+
+            app:layout_constraintEnd_toEndOf="@+id/RadioBtnGroup_Order"
+            app:layout_constraintStart_toStartOf="@+id/RadioBtnGroup_Order"
+            app:layout_constraintTop_toBottomOf="@+id/RadioBtnGroup_Order"
+            app:sc_border_width="2dp"
+            app:sc_corner_radius="10dp"
+            app:sc_tint_color="@color/colorAccent">
+
+            <RadioButton
+                android:id="@+id/Rad_OrderType_Sale"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="فروش"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H2">
+
+                <requestFocus />
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/Rad_OrderType_Return"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="مرجوعی"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H2" />
+
+
+        </info.hoang8f.android.segmented.SegmentedGroup>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Cl_Description"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/layout_border_round"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Order_Name3">
+
+
+
+
+
+            <!--android:lines="2"-->
+            <!--android:maxLines="2"-->
+            <!--android:minLines="2"-->
+            <!--android:scrollbars="vertical"-->
+            <EditText
+                android:id="@+id/Txt_Order_Description"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/list_item"
+                android:ems="10"
+                android:maxLength="300"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:textColor="@color/White"
+                android:textSize="@dimen/H1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Cl_Body"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/layout_border_round_down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cl_Title">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Rv_Order_Items"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fab_Order_Add"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginBottom="24dp"-->
+            <!--android:src="@mipmap/ic_add"-->
+            <!--app:fabSize="normal"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:rippleColor="@color/Amber50" />-->
+
+
+        <com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout
+            android:id="@+id/fab_Menu_Order"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            app:containerId="@+id/fab_container_Order"
+            app:fabId="@+id/fab_Order"
+            app:fabToolbarId="@+id/fab_toolbar_Order"
+            app:fadeInFraction="0.2"
+            app:hideDuration="200"
+            app:horizontalMargin="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:showDuration="600"
+            app:verticalMargin="30dp">
+
+
+            <RelativeLayout
+                android:id="@+id/fab_container_Order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_Order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_menu"
+                    app:fabSize="normal" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fab_toolbar_Order"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/ImgBtnAddProductToOrder"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="AddProduct"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_add" />
+                <ImageView
+                    android:id="@+id/ImgBtnDeleteProductFromOrder"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="DeleteProduct"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_delete_3" />
+                <ImageView
+                    android:id="@+id/ImgBtnOrderConfirm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="Confirm"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_check" />
+            </LinearLayout>
+
+        </com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Cl_Footer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/layout_border_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cl_Header">
+
+
+        <TextView
+            android:id="@+id/Tv_Order_Tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="مبلغ مالیات:"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H1"
+            app:layout_constraintEnd_toEndOf="@+id/Tv_Order_Price"
+            app:layout_constraintTop_toBottomOf="@+id/Tv_Order_Price" />
+
+        <TextView
+            android:id="@+id/Tv_Order_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="مبلغ فاکتور:"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Tv_Order_Net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="خالص مبلغ:"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/Tv_Order_Tax"
+            app:layout_constraintTop_toBottomOf="@+id/Tv_Order_Tax" />
+
+        <TextView
+            android:id="@+id/Tv_Order_Price_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H1"
+            app:layout_constraintBottom_toBottomOf="@+id/Tv_Order_Price"
+            app:layout_constraintEnd_toStartOf="@+id/Tv_Order_Price"
+            app:layout_constraintTop_toTopOf="@+id/Tv_Order_Price" />
+
+        <TextView
+            android:id="@+id/Tv_Order_Tax_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H1"
+            app:layout_constraintBottom_toBottomOf="@+id/Tv_Order_Tax"
+            app:layout_constraintEnd_toStartOf="@+id/Tv_Order_Tax"
+            app:layout_constraintTop_toTopOf="@+id/Tv_Order_Tax" />
+
+        <TextView
+            android:id="@+id/Tv_Order_Net_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Tv_Order_Net"
+            app:layout_constraintEnd_toStartOf="@+id/Tv_Order_Net"
+            app:layout_constraintTop_toTopOf="@+id/Tv_Order_Net" />
+
+        <TextView
+            android:id="@+id/Tv_Order_TimeOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="مدت وصول:"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/Tv_Order_Price" />
+
+        <TextView
+            android:id="@+id/Tv_Order_TimeOut_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textColor="@color/White"
+            android:textSize="@dimen/H1"
+            app:layout_constraintBottom_toBottomOf="@+id/Tv_Order_TimeOut"
+            app:layout_constraintEnd_toStartOf="@+id/Tv_Order_TimeOut"
+            app:layout_constraintTop_toTopOf="@+id/Tv_Order_TimeOut" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".5" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Cl_Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/layout_border_round_roundup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cl_Footer">
+
+        <TextView
+            android:id="@+id/Tv_Order_Title_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="نام کالا"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Chk_OrderCheckAll"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Tv_Order_Title_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|right"
+            android:text="فی"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Tv_Order_Title_1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/Tv_Order_Title_1" />
+
+        <TextView
+            android:id="@+id/Tv_Order_Title_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|right"
+            android:text="تعداد"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Tv_Order_Title_1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toTopOf="@+id/Tv_Order_Title_1" />
+
+        <TextView
+            android:id="@+id/Tv_Order_Title_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|right"
+            android:text="مبلغ کل"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Tv_Order_Title_1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Tv_Order_Title_1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".49" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".32" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".19" />
+
+        <CheckBox
+            android:id="@+id/Chk_OrderCheckAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

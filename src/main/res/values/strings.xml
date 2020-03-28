@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">SmartVisitor</string>
+    <string name="currency">ریال</string>
+    <string name="DoubleDot">:</string>
+    <string name="Ok">تایید</string>
+    <string name="Cancel">انصراف</string>
+    <string name="Description">شرح</string>
+
+    <string name="visit_path">مسیر ویزیت امروز</string>
+    <string name="visit_path_per_month">برنامه کاری ماه</string>
+    <string name="view_orders">مشاهده سفارش ها</string>
+    <string name="product_info">اطلاعات کالاها</string>
+    <string name="catalog">کاتالوگ محصولات</string>
+    <string name="customers">مشتریان</string>
+    <string name="tracking">رهیابی</string>
+    <string name="visitor_info">اطلاعات ویزیتور</string>
+    <string name="settings">تنظیمات</string>
+
+
+    <string name="visitor_Code">کد ویزیتور</string>
+    <string name="visitor_Name">نام</string>
+    <string name="visitor_Ssn">کد ملی</string>
+    <string name="visitor_Credit">اعتبار ریالی</string>
+    <string name="visitor_Discription">سایر اطلاعات</string>
+
+
+    <string name="product_id">شناسه کالا</string>
+    <string name="product_Code">کد کالا</string>
+    <string name="product_Name">نام کالا</string>
+    <string name="product_Brand">برند</string>
+    <string name="product_Group">گروه</string>
+    <string name="product_Price">قیمت</string>
+    <string name="product_ConsumerPrice">قیمت مصرف کننده</string>
+    <string name="product_Count">موجودی</string>
+    <string name="product_CountInBox">تعداد در کارتن</string>
+    <string name="product_Weight">وزن</string>
+    <string name="product_Duration">مدت وصول</string>
+    <string name="product_Detail">توضیحات:</string>
+    <string name="product_Search_View">کد کالا،نام کالا</string>
+
+    <string name="Customer_id">شناسه</string>
+    <string name="Customer_Code">کد مشتری</string>
+    <string name="Customer_Name">نام فروشگاه</string>
+    <string name="Customer_F_Name">نام</string>
+    <string name="Customer_L_name">نام خانوادگی</string>
+    <string name="Customer_Type">نوع</string>
+    <string name="Customer_Group">گروه</string>
+    <string name="Customer_tel">تلفن</string>
+    <string name="Customer_mob">موبایل</string>
+    <string name="Customer_mail">پست الکترونیک</string>
+    <string name="Customer_OpenInvoice">درخواست باز</string>
+    <string name="Customer_Debt">مانده بدهی</string>
+    <string name="Customer_AvgDate">تاریخ راس</string>
+    <string name="Customer_Description">توضیحات</string>
+    <string name="Customer_Address">آدرس</string>
+
+    <string name="update">به روز رسانی</string>
+    <string name="update_All">به روز رسانی کلی</string>
+    <string name="update_Base">به روز اطلاعات پایه</string>
+    <string name="update_BaseData">به روز رسانی اطلاعات پایه</string>
+    <string name="update_Product">به روز رسانی کالاها</string>
+    <string name="update_Inventory">به روز رسانی موجودی</string>
+    <string name="update_Customer">به روز رسانی مشتریان</string>
+    <string name="update_Price">به روز رسانی قیمت ها</string>
+    <string name="update_Warehouse">به روز رسانی انبار ها</string>
+    <string name="update_Plans">به روز رسانی برنامه کاری</string>
+
+    <string name="update_successful">به روز رسانی با موفقیت انجام شد</string>
+    <string name="update_Not_successful">به روز رسانی با خطا مواجه شد</string>
+    <string name="update_Base_successful">به روز رسانی اطلاعات پایه با موفقیت انجام شد</string>
+    <string name="update_Product_successful">به روز رسانی کالاها با موفقیت انجام شد</string>
+    <string name="update_PriceList_successful">به روز رسانی قیمت ها با موفقیت انجام شد</string>
+    <string name="update_Warehouse_successful">به روز رسانی انبار ها با موفقیت انجام شد</string>
+    <string name="update_Customer_successful">به روز رسانی مشتریان با موفقیت انجام شد</string>
+    <string name="update_Plans_successful">به روز رسانی برنامه کاری با موفقیت انجام شد</string>
+    <string name="update_Inventory_successful">به روز رسانی موجودی با موفقیت انجام شد</string>
+
+    <string name="update_Detail_All">شامل کالاها،برندها،گروههای کالایی،مشتریان،موجودی انبار،لیست های قیمت،اطلاعات ویزیتور و سایر اطلاعات</string>
+    <string name="update_Detail_Base">شامل دادههای اولیه اپلیکیشن</string>
+    <string name="update_Detail_Product">برندها،گروه ها،وکالاها</string>
+    <string name="update_Detail_Inventory">موجودی تعدادی،سقف سفارش</string>
+    <string name="update_Detail_Customer">مشتریان،اعتبارات ریالی،مشخصات </string>
+    <string name="update_Detail_Price">قیمت های کالا،لیستهای قیمت </string>
+    <string name="update_Detail_Plan">کلیه مسیرهای ویزیت و برنامه کاری ماه جاری</string>
+
+    <string name="PriceList">لیست قیمت</string>
+    <string name="PriceList_Detail">جزئیات قیمت</string>
+    <string name="PriceList_Description">قیمت و مدت وصول</string>
+
+    <string name="Connection_Failed">بر قراری ارتباط با خطا مواجه شد</string>
+
+    <string name="customer_Search_View">کد مشتری،نام مشتری</string>
+    <string name="ProductQuantity">تعداد کالا</string>
+    <string name="Visitor_ID">شناسه</string>
+
+
+</resources>
